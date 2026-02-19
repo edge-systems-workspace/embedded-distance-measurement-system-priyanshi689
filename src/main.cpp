@@ -29,6 +29,10 @@ long distanceCm = 0;
  // Create variable to store calculated distance
 
 void setup() {
+    Serial.begin(9600);
+    pinMode(TRIG_PIN, OUTPUT);
+    pinMode(ECHO_PIN, INPUT);
+    Serial.println("Ultrasonic HC-SR04 initialized");
 
     // TODO 5:
     // Initialize Serial communication (9600 baud rate)
