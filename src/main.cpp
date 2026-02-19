@@ -56,6 +56,11 @@ void loop() {
     digitalWrite(TRIG_PIN, LOW);
 
     duration = pulseIn(ECHO_PIN, HIGH);
+    distanceCm = duration * 0.034 / 2;
+
+    Serial.print("Distance: ");
+    Serial.print(distanceCm);
+    Serial.println(" cm");
 
 
     // TODO 9:
