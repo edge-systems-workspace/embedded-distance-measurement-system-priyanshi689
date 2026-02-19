@@ -9,6 +9,12 @@
  * Measures distance using HC-SR04 ultrasonic sensor
  * and displays structured output via Serial Monitor.
  */
+#define TRIG_PIN 9
+#define ECHO_PIN 10
+
+long duration = 0;
+long distanceCm = 0;
+
 
  // TODO 1:
  // Define TRIG pin (Use pin 9)
